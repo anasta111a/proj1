@@ -22,7 +22,7 @@ body {
   color: #cc3366;
 }
 
-/* 🌷 Профіль */
+/*Профіль */
 .profile {
   display: flex;
   justify-content: center;
@@ -60,7 +60,7 @@ body {
   margin-bottom: 4px; 
 }
 
-/* 🎓 Табличка */
+/*Табличка */
 .education {
   text-align: center;
   padding: 40px 20px;
@@ -86,11 +86,13 @@ th, td {
   border: 1px solid #f7b6c2;
 }
 
-/* 💌 Контакти */
+/*Контакти */
 
 .contact {
   padding: 40px 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffbbcf;
 }
 
@@ -100,34 +102,39 @@ th, td {
   margin-bottom: 20px;
 }
 
-.contact form {
-  display: inline-block;
-  text-align: left;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
   background-color: #fff;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(255, 182, 193, 0.3);
 }
-
+form p {
+  margin: 0;
+  align-self: baseline;
+  padding-left: 10px;
+}
 .contact input,
 .contact textarea {
-  display: block;
   margin-top: 5px;
   margin-bottom: 15px;
-  width: 100%;
+  width: 90%;
   padding: 8px;
   border: 3px solid #f7b6c2;
   border-radius: 8px;
-  font-family: inherit;
 }
 
 .contact_info {
   margin-top: 20px;
   font-style: italic;
   color: #555;
+  text-align: center;
 }
 
-/* 📎 Соцмережі */
+/*Соцмережі */
 .social_media {
   text-align: center;
   padding: 30px;
@@ -146,7 +153,7 @@ th, td {
   text-decoration: underline;
 }
 
-/* 🌼 Респонсивність */
+/*Респонсивність */
 @media (max-width: 768px) {
   .profile_container {
       flex-direction: column;
