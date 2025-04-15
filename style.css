@@ -56,7 +56,7 @@ body {
   
 }
 .profile_info li {
-  list-style: "&#x1F497";
+  list-style: "\01F497";
   margin-bottom: 4px; 
 }
 
